@@ -167,7 +167,9 @@
   const encodedMessage = encodeURIComponent(message);
 
   // Create the mailto link
-  const mailtoLink = `mailto:?subject=Message from ${encodedName}&body=From: ${encodedName}%0AEmail: ${encodedEmail}%0A%0A${encodedMessage}`;
+  const toAddress = "team@relu-ai.com"; // Replace this with the recipient's email address
+  const mailtoLink = `mailto:${toAddress}?subject=Message from ${encodedName}&body=From: ${encodedName}%0AEmail: ${encodedEmail}%0A%0A${encodedMessage}`;
+
 
   // Open the user's email client with the pre-filled email
   console.log('kkk');
