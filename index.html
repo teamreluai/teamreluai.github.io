@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relu AI - Transforming Business with Artificial Intelligence</title>
+ 
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector("nav ul");
+        navLinks.classList.toggle("show");
+    }
+
+ 
+
+</script>
+
+<link rel="stylesheet" href="src/css/main.css">
+
+
+</head>
+<body>
+    <header style="display: flex; align-items: center; gap: 10px; padding: 10 0px;">
+        <img style="width: 350px; height: auto; padding: 5px" src="src/img/relutv2.png" alt="Relu AI Logo">
+        <div style="display: flex; align-items: center; font-size: 24px;">
+        </div>
+    </header>
+    
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#services">What we do</a></li>
+            <li><a href="#contact">What's trending</a></li>
+            <li><a href="#services">Who we are</a></li>
+            <li><a href="#contact">Partners</a></li>
+            <li><a href="#services">Leaders</a></li>
+            <li><a href="#contact">Careers</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+       
+            <section class="image-text-section">
+                <div class="image-container">
+                    <img src="src/img/reluHeaderImage1TP.png" alt="Description of Image">
+                </div>
+                <div class="text-container">
+                    <h2 style="font-size: 3rem;">Lead the Future with Automation & AI-Driven Innovation</h2>
+                    <p style="font-family: GT Sectra Fine, Palatino; font-size: 1.125rem;">
+                        AI and automation are redefining how businesses operate, driving efficiency, precision, and scalability across industries. From optimizing supply chains to enhancing customer experiences, AI's capabilities are transforming core processes and enabling more informed decision-making. For leaders, success hinges on a clear vision, data readiness, and a commitment to continuous innovation.</p>
+                </div>
+            </section>
+            
+            
+            <section class="articles-grid">
+                <div class="article-item">
+                    <div class="image-container">
+                        <img src="src/img/articles.png" alt="Generative AI">
+                        <div class="overlay">
+                            <h3>The Rise of Generative AI</h3>
+                            <p>How generative AI is transforming industries <br/> and redefining possibilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-item" style="word-wrap: break-word;">
+                    <div class="image-container">
+                        <img src="src/img/automation.jpg" alt="Autonomous Agents">
+                        <div class="overlay">
+                            <h3 >Autonomous Agents for <br/>Automation</h3>
+                            <p>Exploring how autonomous agents are revolutionizing business processes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="image-container">
+                        <img src="src/img/oilandgas.jpg" alt="AI in Oil and Gas">
+                        <div class="overlay">
+                            <h3>AI in Oil and Gas</h3>
+                            <p>Enhancing efficiency and safety with AI-driven insights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="image-container">
+                        <img src="src/img/laboratory-3d-glassware.jpg" alt="AI in Pharma">
+                        <div class="overlay">
+                            <h3>AI in Pharmaceuticals</h3>
+                            <p>Accelerating drug discovery and personalized medicine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="image-container">
+                        <img src="src/img/online-6063329_1280.png" alt="AI in E-commerce">
+                        <div class="overlay">
+                            <h3>AI in E-commerce</h3>
+                            <p>Driving sales and personalization with AI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="image-container">
+                        <img src="src/img/investor-trader-discussing-statistic-data-holding-papers-with-financial-charts-pen-cropped-shot-broker-job-trading-concept.jpg" alt="AI in Finance">
+                        <div class="overlay">
+                            <h3>AI in Finance</h3>
+                            <p>Transforming risk management and customer service.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+           
+            
+            
+      
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>AI Consulting</h3>
+                <p>Providing strategic guidance to harness the power of AI for your business growth.</p>
+            </div>
+            <div class="service-item">
+                <h3>Custom AI Solutions</h3>
+                <p>Developing tailored AI applications to meet your unique business challenges.</p>
+            </div>
+            <div class="service-item">
+                <h3>Machine Learning Models</h3>
+                <p>Implementing advanced machine learning algorithms to drive data-driven decisions.</p>
+            </div>
+            <div class="service-item">
+                <h3>Natural Language Processing</h3>
+                <p>Enhancing interactions through intelligent language understanding and generation.</p>
+            </div>
+            <div class="service-item">
+                <h3>AI-Powered Automation</h3>
+                <p>Streamlining operations by automating repetitive tasks with AI solutions.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <form class="contact-form" id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div><br/><br/><br/>
+    <footer>
+        <p>&copy; 2025 Relu AI. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+       document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Get the form field values
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Encode the values for use in the mailto link
+  const encodedName = encodeURIComponent(name);
+  const encodedEmail = encodeURIComponent(email);
+  const encodedMessage = encodeURIComponent(message);
+
+  // Create the mailto link
+  const mailtoLink = `mailto:?subject=Message from ${encodedName}&body=From: ${encodedName}%0AEmail: ${encodedEmail}%0A%0A${encodedMessage}`;
+
+  // Open the user's email client with the pre-filled email
+  console.log('kkk');
+  window.location.href = mailtoLink;
+
+});
+</script>
+
+</html>
