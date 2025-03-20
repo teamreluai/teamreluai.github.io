@@ -21,7 +21,7 @@
 </head>
 <body>
     <header style="display: flex; align-items: center; gap: 10px; padding: 10 0px;">
-        <img style="width: 350px; height: auto; padding: 5px" src="src/relutv2.png" alt="Relu AI Logo">
+        <img style="width: 350px; height: auto; padding: 5px" src="src/img/relutv2.png" alt="Relu AI Logo">
         <div style="display: flex; align-items: center; font-size: 24px;">
         </div>
     </header>
@@ -41,20 +41,24 @@
        
             <section class="image-text-section">
                 <div class="image-container">
-                    <img src="src/reluHeaderImage1TP.png" alt="Description of Image">
+                    <img src="src/img/reluHeaderImage1TP.png" alt="Description of Image">
                 </div>
                 <div class="text-container">
-                    <h2 style="font-size: 3rem;">Lead the Future with Automation & AI-Driven Innovation</h2>
+                    <h2 style="font-size: 3rem;"> Unlock Competitive Advantage with AI & Automation</h2>
                     <p style="font-family: GT Sectra Fine, Palatino; font-size: 1.125rem;">
-                        AI and automation are redefining how businesses operate, driving efficiency, precision, and scalability across industries. From optimizing supply chains to enhancing customer experiences, AI's capabilities are transforming core processes and enabling more informed decision-making. For leaders, success hinges on a clear vision, data readiness, and a commitment to continuous innovation.</p>
+                       
+Drive measurable impact by harnessing AI and automation to streamline operations, boost productivity, and accelerate decision-making. From supply chain optimization to personalized customer engagement, AI is reshaping industries and delivering bottom-line results.
+Is your organization ready to lead? Align your strategy with AI-driven innovation, ensure data readiness, and commit to continuous transformation.
+Partner with us to turn potential into performance.</p>
                 </div>
             </section>
             
             
             <section class="articles-grid">
+                <h2>What’s trending with data and AI</h2>
                 <div class="article-item">
                     <div class="image-container">
-                        <img src="src/articles.png" alt="Generative AI">
+                        <img src="src/img/articles.png" alt="Generative AI">
                         <div class="overlay">
                             <h3>The Rise of Generative AI</h3>
                             <p>How generative AI is transforming industries <br/> and redefining possibilities.</p>
@@ -63,7 +67,7 @@
                 </div>
                 <div class="article-item" style="word-wrap: break-word;">
                     <div class="image-container">
-                        <img src="src/automation.jpg" alt="Autonomous Agents">
+                        <img src="src/img/automation.jpg" alt="Autonomous Agents">
                         <div class="overlay">
                             <h3 >Autonomous Agents for <br/>Automation</h3>
                             <p>Exploring how autonomous agents are revolutionizing business processes.</p>
@@ -72,7 +76,7 @@
                 </div>
                 <div class="article-item">
                     <div class="image-container">
-                        <img src="src/oilandgas.jpg" alt="AI in Oil and Gas">
+                        <img src="src/img/oilandgas.jpg" alt="AI in Oil and Gas">
                         <div class="overlay">
                             <h3>AI in Oil and Gas</h3>
                             <p>Enhancing efficiency and safety with AI-driven insights.</p>
@@ -81,7 +85,7 @@
                 </div>
                 <div class="article-item">
                     <div class="image-container">
-                        <img src="src/laboratory-3d-glassware.jpg" alt="AI in Pharma">
+                        <img src="src/img/laboratory-3d-glassware.jpg" alt="AI in Pharma">
                         <div class="overlay">
                             <h3>AI in Pharmaceuticals</h3>
                             <p>Accelerating drug discovery and personalized medicine.</p>
@@ -90,7 +94,7 @@
                 </div>
                 <div class="article-item">
                     <div class="image-container">
-                        <img src="src/online-6063329_1280.png" alt="AI in E-commerce">
+                        <img src="src/img/online-6063329_1280.png" alt="AI in E-commerce">
                         <div class="overlay">
                             <h3>AI in E-commerce</h3>
                             <p>Driving sales and personalization with AI.</p>
@@ -99,7 +103,7 @@
                 </div>
                 <div class="article-item">
                     <div class="image-container">
-                        <img src="src/investor-trader-discussing-statistic-data-holding-papers-with-financial-charts-pen-cropped-shot-broker-job-trading-concept.jpg" alt="AI in Finance">
+                        <img src="src/img/investor-trader-discussing-statistic-data-holding-papers-with-financial-charts-pen-cropped-shot-broker-job-trading-concept.jpg" alt="AI in Finance">
                         <div class="overlay">
                             <h3>AI in Finance</h3>
                             <p>Transforming risk management and customer service.</p>
@@ -167,9 +171,7 @@
   const encodedMessage = encodeURIComponent(message);
 
   // Create the mailto link
-  const toAddress = "team@relu-ai.com"; // Replace this with the recipient's email address
-  const mailtoLink = `mailto:${toAddress}?subject=Message from ${encodedName}&body=From: ${encodedName}%0AEmail: ${encodedEmail}%0A%0A${encodedMessage}`;
-
+  const mailtoLink = `mailto:?subject=Message from ${encodedName}&body=From: ${encodedName}%0AEmail: ${encodedEmail}%0A%0A${encodedMessage}`;
 
   // Open the user's email client with the pre-filled email
   console.log('kkk');
