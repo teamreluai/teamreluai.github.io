@@ -10,6 +10,13 @@
         const navLinks = document.querySelector("nav ul");
         navLinks.classList.toggle("show");
     }
+    const items = document.querySelectorAll('.article-item');
+
+items.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        document.querySelector('.show-overlay')?.classList.remove('show-overlay');
+    });
+});
 
  
 
@@ -21,7 +28,7 @@
 </head>
 <body>
     <header style="display: flex; align-items: center; gap: 10px; padding: 10 0px;">
-        <img style="width: 350px; height: auto; padding: 5px" src="src/relutv2.png" alt="Relu AI Logo">
+        <img style="width: 350px; height: auto; padding: 5px" src="src/img/relutv2.png" alt="Relu AI Logo">
         <div style="display: flex; align-items: center; font-size: 24px;">
         </div>
     </header>
@@ -53,15 +60,19 @@ Partner with us to turn potential into performance.</p>
                 </div>
             </section>
             
-                            <h2 style="color: white;">What’s trending with data and AI</h2>
-
+            <h2 style="color: white;">What’s trending: Data and AI</h2>
             <section class="articles-grid">
-                <div class="article-item">
+        
+                <div class="article-item show-overlay">
                     <div class="image-container">
-                        <img src="src/articles.png" alt="Generative AI">
+                        <img src="src/23.png" alt="Generative AI">
                         <div class="overlay">
                             <h3>The Rise of Generative AI</h3>
                             <p>How generative AI is transforming industries <br/> and redefining possibilities.</p>
+                        </div>
+
+                        <div class="arrow-icon arbtn">
+                            <div class="arrow__right"></div>
                         </div>
                     </div>
                 </div>
@@ -72,14 +83,20 @@ Partner with us to turn potential into performance.</p>
                             <h3 >Autonomous Agents for <br/>Automation</h3>
                             <p>Exploring how autonomous agents are revolutionizing business processes.</p>
                         </div>
+                        <div class="arrow-icon arbtn">
+                            <div class="arrow__right"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="article-item">
                     <div class="image-container">
-                        <img src="src/oilandgas.jpg" alt="AI in Oil and Gas">
+                        <img src="src/20.png" alt="AI in Oil and Gas">
                         <div class="overlay">
                             <h3>AI in Oil and Gas</h3>
                             <p>Enhancing efficiency and safety with AI-driven insights.</p>
+                        </div>
+                        <div class="arrow-icon arbtn">
+                            <div class="arrow__right"></div>
                         </div>
                     </div>
                 </div>
@@ -90,23 +107,32 @@ Partner with us to turn potential into performance.</p>
                             <h3>AI in Pharmaceuticals</h3>
                             <p>Accelerating drug discovery and personalized medicine.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="article-item">
-                    <div class="image-container">
-                        <img src="src/online-6063329_1280.png" alt="AI in E-commerce">
-                        <div class="overlay">
-                            <h3>AI in E-commerce</h3>
-                            <p>Driving sales and personalization with AI.</p>
+                        <div class="arrow-icon arbtn">
+                            <div class="arrow__right"></div>
                         </div>
                     </div>
                 </div>
                 <div class="article-item">
                     <div class="image-container">
-                        <img src="src/investor-trader-discussing-statistic-data-holding-papers-with-financial-charts-pen-cropped-shot-broker-job-trading-concept.jpg" alt="AI in Finance">
+                        <img src="src/21.png" alt="AI in E-commerce">
+                        <div class="overlay">
+                            <h3>AI in E-commerce</h3>
+                            <p>Driving sales and personalization with AI.</p>
+                        </div>
+                        <div class="arrow-icon arbtn">
+                            <div class="arrow__right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="image-container">
+                        <img src="src/22.png" alt="AI in Finance">
                         <div class="overlay">
                             <h3>AI in Finance</h3>
                             <p>Transforming risk management and customer service.</p>
+                        </div>
+                        <div class="arrow-icon arbtn">
+                            <div class="arrow__right"></div>
                         </div>
                     </div>
                 </div>
